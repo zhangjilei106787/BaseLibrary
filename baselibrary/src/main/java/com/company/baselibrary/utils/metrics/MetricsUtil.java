@@ -27,7 +27,7 @@ public class MetricsUtil {
      * @param activity
      * @param application
      */
-    public static void setCustomDensity(Activity activity, Application application) {
+    public static void setCustomDensity(Activity activity, final Application application) {
         DisplayMetrics appDisplayMetrics = application.getResources().getDisplayMetrics();
         if (sNoncompatDensity == 0) {
             sNoncompatDensity = appDisplayMetrics.density;

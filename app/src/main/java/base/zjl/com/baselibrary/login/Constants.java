@@ -3,12 +3,6 @@ package base.zjl.com.baselibrary.login;
 
 import base.zjl.com.baselibrary.BuildConfig;
 
-/**
- * author: liliuhuan
- * date：2018/6/21
- * version:1.0.0
- * description: Constants${DES} 常量类
- */
 public class Constants {
     public static String baseUrl = "http://demo.wukzk.com/limeng/pdzp/public/api/";
     static {
@@ -25,35 +19,4 @@ public class Constants {
     public static final String URL_userCate = "Other/userCate";//接口名称：获取用户种类
     public static final String URL_BANNER_LIST = "BannerInfo/index";//get
 
-    public static final String[] INDICATORS = new String[]{
-            "BallPulseIndicator",
-            "BallGridPulseIndicator",
-            "BallClipRotateIndicator",
-            "BallClipRotatePulseIndicator",
-            "SquareSpinIndicator",
-            "BallClipRotateMultipleIndicator",
-            "BallPulseRiseIndicator",
-            "BallRotateIndicator",
-            "CubeTransitionIndicator",
-            "BallZigZagIndicator",
-            "BallZigZagDeflectIndicator",
-            "BallTrianglePathIndicator",
-            "BallScaleIndicator",
-            "LineScaleIndicator",
-            "LineScalePartyIndicator",
-            "BallScaleMultipleIndicator",
-            "BallPulseSyncIndicator",
-            "BallBeatIndicator",
-            "LineScalePulseOutIndicator",
-            "LineScalePulseOutRapidIndicator",
-            "BallScaleRippleIndicator",
-            "BallScaleRippleMultipleIndicator",
-            "BallSpinFadeLoaderIndicator",
-            "LineSpinFadeLoaderIndicator",
-            "TriangleSkewSpinIndicator",
-            "PacmanIndicator",
-            "BallGridBeatIndicator",
-            "SemiCircleSpinIndicator",
-            "com.wang.avi.sample.MyCustomIndicator"
-    };
 }

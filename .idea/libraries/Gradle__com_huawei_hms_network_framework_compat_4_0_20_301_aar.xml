@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huawei.hms:network-framework-compat:4.0.20.301@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/987257a3adf62036d1c752ed999b0986/jetified-network-framework-compat-4.0.20.301/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cc46873835e1a624bfece6883306a3be/transformed/jetified-network-framework-compat-4.0.20.301/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/987257a3adf62036d1c752ed999b0986/jetified-network-framework-compat-4.0.20.301/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/987257a3adf62036d1c752ed999b0986/jetified-network-framework-compat-4.0.20.301/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

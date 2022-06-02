@@ -21,7 +21,7 @@ public class GsonWrapperCallBack<T> implements Callback<T> {
 
     public GsonWrapperCallBack(IGsonRequestCallBack callback) {
         this.callback = callback;
-        if (null != this.callback) callback.onStartLoading();
+        if (null != this.callback) callback.onBeforeRequest();
     }
 
     @Override

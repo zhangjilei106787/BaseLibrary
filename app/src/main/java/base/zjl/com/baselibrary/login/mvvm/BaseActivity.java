@@ -2,50 +2,77 @@ package base.zjl.com.baselibrary.login.mvvm;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.appcompat.widget.Toolbar;
+
+import android.os.Handler;
+import android.os.Message;
 import android.text.TextUtils;
-import android.view.KeyEvent;
 import android.view.View;
-import android.widget.Toast;
 
 import com.company.baselibrary.R;
+
+import base.zjl.com.baselibrary.login.bean.MessageEvent;
+import base.zjl.com.baselibrary.login.observer.ActivityConfigurationObserver;
+
 import com.company.baselibrary.utils.common.ScreenUtils;
 import com.company.baselibrary.views.toolbar.CustomToolbar;
-import com.gyf.barlibrary.ImmersionBar;
-import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
+import com.gyf.immersionbar.ImmersionBar;
+import com.trello.rxlifecycle4.components.support.RxAppCompatActivity;
 
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 public abstract class BaseActivity extends RxAppCompatActivity implements View.OnClickListener {
-    private long exitTime = 0;
-    private CustomToolbar customToolbar;
+
     private ProgressDialog mProgressDialog;
     public ImmersionBar mMImmersionBar;
-    private Unbinder unbinder;
+    private Handler handler;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         beforeContentView();
         mMImmersionBar = ImmersionBar.with(this);
-        mMImmersionBar.init();
-        setContentView(initLoadResId());
-        unbinder = ButterKnife.bind(this);
-        if (useToolBar()) initBar();
-        getLifecycle().addObserver(new ActivityconfigurationObserver(this));
+        mMImmersionBar.fitsSystemWindows(true).statusBarDarkFont(true).statusBarColor(R.color.colorPrimary).init();
+        layoutViewBinding();
+        getLifecycle().addObserver(new ActivityConfigurationObserver(this));
+        createHandler();
         initView();
         initEvent();
-        initDate();
+        initData();
+    }
 
+    private void createHandler() {
+        handler = new Handler(getMainLooper()) {
+            @Override
+            public void handleMessage(@NonNull Message msg) {
+                handleMsg(msg);
+            }
+        };
+    }
+
+    public abstract void handleMsg(Message msg);
+
+    public abstract void initView();
+
+    public abstract void initEvent();
+
+    public abstract void initData();
+
+    public abstract void layoutViewBinding();
+
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void EventbusMessage(MessageEvent event) {
+        handBusMessage(event);
     }
 
 
-    protected abstract void initDate();
-
-    protected abstract void initEvent();
-
+    public abstract void handBusMessage(MessageEvent event);
 
     /**
      * 初始化沉浸式
@@ -54,50 +81,6 @@ public abstract class BaseActivity extends RxAppCompatActivity implements View.O
         mMImmersionBar.keyboardEnable(true).navigationBarWithKitkatEnable(false).statusBarDarkFont(true).statusBarColor(color).init();
     }
 
-    public void initBar() {
-        customToolbar = findViewById(R.id.custom_toolbar);
-        if (customToolbar == null)
-            throw new NullPointerException("该activity必须包含toolbar自定义的布局");
-        customToolbar.setLeftTitleClickListener(this);
-    }
-
-    public void setToolBarTitle(String resStr) {
-        if (customToolbar != null) {
-            customToolbar.setMainTitle(resStr);
-        }
-    }
-
-    public void setRightTitleText(String resStr) {
-        if (customToolbar != null) {
-            customToolbar.setRightTitleText(resStr);
-        }
-    }
-
-    public void setRightTitleClickListener(View.OnClickListener listener) {
-        if (customToolbar != null) {
-            customToolbar.setRightTitleClickListener(listener);
-        }
-    }
-
-    public void setToolBarTitle(@StringRes int resStr) {
-        if (customToolbar != null) {
-            customToolbar.setMainTitle(getString(resStr));
-        }
-    }
-
-    public void setImageRightClickListener(View.OnClickListener onClickListener) {
-        if (customToolbar != null) {
-            customToolbar.setImageRightClickListener(onClickListener);
-        }
-    }
-
-    public void setRightTitleText(int res) {
-        if (customToolbar != null) {
-            customToolbar.setRightImageRes(res);
-        }
-    }
-
-    public abstract boolean useToolBar();
 
     /**
      * 动态改变
@@ -110,34 +93,16 @@ public abstract class BaseActivity extends RxAppCompatActivity implements View.O
         }
     }
 
-    public abstract int initLoadResId();
-
-    protected abstract void initView();
-
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            exit();
-            return false;
-        }
-        return super.onKeyDown(keyCode, event);
+    public void onClick(View view) {
+        viewOnClick(view);
     }
 
-    public void exit() {
-        if ((System.currentTimeMillis() - exitTime) > 2000) {
-            Toast.makeText(getApplicationContext(), "再按一次退出程序",
-                    Toast.LENGTH_SHORT).show();
-            exitTime = System.currentTimeMillis();
-        } else {
-            finish();
-            System.exit(0);
-        }
-    }
+    public abstract void viewOnClick(View view);
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unbinder.unbind();
         if (mProgressDialog != null) {
             mProgressDialog.cancel();
             mProgressDialog = null;

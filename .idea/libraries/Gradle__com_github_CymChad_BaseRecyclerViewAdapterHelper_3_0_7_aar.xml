@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e4fe9e3a20f9720b2ef6aaca93f1ac6/jetified-BaseRecyclerViewAdapterHelper-3.0.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e4fe9e3a20f9720b2ef6aaca93f1ac6/jetified-BaseRecyclerViewAdapterHelper-3.0.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e4fe9e3a20f9720b2ef6aaca93f1ac6/jetified-BaseRecyclerViewAdapterHelper-3.0.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/3.0.7/1a9a1dd1faf0ed91098214dfcd102eddd8ae105f/BaseRecyclerViewAdapterHelper-3.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

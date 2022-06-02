@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.trello.rxlifecycle4:rxlifecycle-components-preference:4.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4d08ab69332f2e5c841ad089f1918aba/jetified-rxlifecycle-components-preference-4.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/856eb7e840b24660f526f3b758fb6250/jetified-rxlifecycle-components-preference-4.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c8830031fa0cf9fc76e0013a714156dc/transformed/jetified-rxlifecycle-components-preference-4.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/856eb7e840b24660f526f3b758fb6250/jetified-rxlifecycle-components-preference-4.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/856eb7e840b24660f526f3b758fb6250/jetified-rxlifecycle-components-preference-4.0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.trello.rxlifecycle4/rxlifecycle-components-preference/4.0.2/b9656d32346ed40d959b8a06008fa20d422a6c0b/rxlifecycle-components-preference-4.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.trello.rxlifecycle4/rxlifecycle-components-preference/4.0.2/41e67b6a4f09a121d0c55696185b65bcc7f81f49/rxlifecycle-components-preference-4.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

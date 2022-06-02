@@ -1,10 +1,9 @@
 ext {
 
     android = [
-            compileSdkVersion: "android-P",
-            buildToolsVersion: "28.0.0 rc1",
-            minSdkVersion    : 17,
-            targetSdkVersion : 17,
+            compileSdkVersion: "29",
+            buildToolsVersion: "29.0.3",
+            minSdkVersion    : 24,
             versionCode      : 1,
             versionName      : "1.0.0"
     ]
@@ -14,7 +13,6 @@ ext {
             retrofitSdkVersion      : "2.4.0",
             dagger2SdkVersion       : "2.15",
             glideSdkVersion         : "4.6.1",
-            butterknifeSdkVersion   : "8.8.1",
             rxlifecycle2SdkVersion  : "2.2.1",
             espressoSdkVersion      : "3.0.1",
             canarySdkVersion        : "1.5.4"
@@ -39,14 +37,8 @@ ext {
             "glide-loader-okhttp3"    : "com.github.bumptech.glide:okhttp3-integration:${version["glideSdkVersion"]}",
 
             //view
-            "butterknife"             : "com.jakewharton:butterknife:${version["butterknifeSdkVersion"]}",
-            "butterknife-compiler"    : "com.jakewharton:butterknife-compiler:${version["butterknifeSdkVersion"]}",
             "pickerview"              : "com.contrarywind:Android-PickerView:3.2.5",
             "photoview"               : "com.github.chrisbanes.photoview:library:1.2.3",
-            "numberprogressbar"       : "com.daimajia.numberprogressbar:library:1.2@aar",
-            "nineoldandroids"         : "com.nineoldandroids:library:2.4.0",
-            "paginate"                : "com.github.markomilos:paginate:0.5.1",
-            "vlayout"                 : "com.alibaba.android:vlayout:1.1.0@aar",
 
             //rx2
             "rxandroid2"              : "io.reactivex.rxjava2:rxandroid:2.0.2",
@@ -54,40 +46,22 @@ ext {
             "rxlifecycle2"            : "com.trello.rxlifecycle2:rxlifecycle:${version["rxlifecycle2SdkVersion"]}",
             "rxlifecycle2-android"    : "com.trello.rxlifecycle2:rxlifecycle-android:${version["rxlifecycle2SdkVersion"]}",
             "rxlifecycle2-components" : "com.trello.rxlifecycle2:rxlifecycle-components:${version["rxlifecycle2SdkVersion"]}",
-            "rxcache2"                : "com.github.VictorAlbertos.RxCache:runtime:1.8.3-2.x",
             "rxpermissions2"          : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",
-            "rxerrorhandler2"         : "me.jessyan:rxerrorhandler:2.1.1",
 
             "androideventbus"         : "org.simple:androideventbus:1.0.5.1",
             "gson"                    : "com.google.code.gson:gson:2.8.2",
             "multidex"                : "com.android.support:multidex:1.0.1",
             "javax.annotation"        : "javax.annotation:jsr250-api:1.0",
-            "arouter"                 : "com.alibaba:arouter-api:1.3.1",
-            "arouter-compiler"        : "com.alibaba:arouter-compiler:1.1.4",
             "progressmanager"         : "me.jessyan:progressmanager:1.5.0",
             "retrofit-url-manager"    : "me.jessyan:retrofit-url-manager:1.2.5",
             "lifecyclemodel"          : "me.jessyan:lifecyclemodel:1.0.1",
             "fragmention"             : "me.yokeyword:fragmentation:1.3.4",
             "avloading"               : "com.wang.avi:library:2.1.3",
-            "zxing"                   : "me.dm7.barcodescanner:zxing:1.9",
 
             //test
-            "junit"                   : "junit:junit:4.12",
-            "androidJUnitRunner"      : "android.support.test.runner.AndroidJUnitRunner",
-            "runner"                  : "com.android.support.test:runner:1.0.1",
-            "espresso-core"           : "com.android.support.test.espresso:espresso-core:${version["espressoSdkVersion"]}",
-            "espresso-contrib"        : "com.android.support.test.espresso:espresso-contrib:${version["espressoSdkVersion"]}",
-            "espresso-intents"        : "com.android.support.test.espresso:espresso-intents:${version["espressoSdkVersion"]}",
-            "mockito-core"            : "org.mockito:mockito-core:1.+",
-            "timber"                  : "com.jakewharton.timber:timber:4.7.0",
-            "logger"                  : "com.orhanobut:logger:2.2.0",
-            "canary-debug"            : "com.squareup.leakcanary:leakcanary-android:${version["canarySdkVersion"]}",
-            "canary-release"          : "com.squareup.leakcanary:leakcanary-android-no-op:${version["canarySdkVersion"]}",
-            "umeng-analytics"         : "com.umeng.analytics:analytics:6.0.1",
             "SmartRefreshHeader"      : "com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5",
             "SmartRefreshLayout"      : "com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5",
             "barlibrary"              : 'com.gyf.barlibrary:barlibrary:2.3.0',
-            "mpandroidchart"          : 'com.github.PhilJay:MPAndroidChart:v3.0.3',
 
     ]
 

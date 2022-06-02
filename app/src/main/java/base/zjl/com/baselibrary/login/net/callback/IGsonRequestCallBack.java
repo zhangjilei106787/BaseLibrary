@@ -11,7 +11,7 @@ public interface IGsonRequestCallBack<T> {
     /**
      * 请求前的回调
      */
-    void onStartLoading();
+    void onBeforeRequest();
 
     /**
      * 成功的回调

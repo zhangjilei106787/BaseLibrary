@@ -1,12 +1,12 @@
 package base.zjl.com.baselibrary.login.dao;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.persistence.room.Dao;
-import android.arch.persistence.room.Delete;
-import android.arch.persistence.room.Insert;
-import android.arch.persistence.room.OnConflictStrategy;
-import android.arch.persistence.room.Query;
-import android.arch.persistence.room.Update;
+import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
+import androidx.room.Delete;
+import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
+import androidx.room.Query;
+import androidx.room.Update;
 
 import java.util.List;
 
@@ -21,9 +21,6 @@ public interface StudentDao {
     //配合livedata使用  直接更新ui
     @Query("select * from studententry")
     LiveData<List<StudentEntry>> getAll1();
-    //配合rxjava使用
-    @Query("select * from studententry")
-    Flowable<List<StudentEntry>> getAll2();//背压情况使用  其他不适用 影响性能
 
     @Query("SELECT * FROM StudentEntry WHERE id IN (:ids)")
     List<StudentEntry> getAllByIds(long[] ids);

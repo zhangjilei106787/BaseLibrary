@@ -1,7 +1,7 @@
 package com.company.baselibrary.views.loading;
 
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.company.baselibrary.views.loading.callback.Callback;
 import com.company.baselibrary.views.loading.core.Convertor;

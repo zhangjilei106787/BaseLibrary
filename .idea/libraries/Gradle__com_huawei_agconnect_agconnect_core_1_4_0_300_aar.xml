@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huawei.agconnect:agconnect-core:1.4.0.300@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/081496d422714b60576214eb7a0dc415/jetified-agconnect-core-1.4.0.300/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb548cb74aaf09a645a0c1b6c83e9532/transformed/jetified-agconnect-core-1.4.0.300/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/081496d422714b60576214eb7a0dc415/jetified-agconnect-core-1.4.0.300/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/081496d422714b60576214eb7a0dc415/jetified-agconnect-core-1.4.0.300/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

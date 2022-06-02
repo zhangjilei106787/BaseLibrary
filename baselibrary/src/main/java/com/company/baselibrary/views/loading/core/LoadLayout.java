@@ -1,7 +1,7 @@
 package com.company.baselibrary.views.loading.core;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import android.widget.FrameLayout;
 
@@ -58,7 +58,12 @@ public class LoadLayout extends FrameLayout {
     }
 
     private void postToMainThread(final Class<? extends Callback> status) {
-        post(() -> showCallbackView(status));
+        post(new Runnable() {
+            @Override
+            public void run() {
+                showCallbackView(status);
+            }
+        });
     }
 
     private void showCallbackView(Class<? extends Callback> status) {

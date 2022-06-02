@@ -1,7 +1,7 @@
 package com.company.baselibrary.base;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,17 +27,20 @@ public abstract class BaseRecycleViewAdapter<T> extends RecyclerView.Adapter<Bas
     }
 
     @Override
-    public BaseRecycleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public BaseRecycleViewHolder onCreateViewHolder(ViewGroup parent, final int viewType) {
         View itemView = mInflater.inflate(getConvertViewId(viewType), parent, false);
         BaseRecycleViewHolder<T> holder = getNewHolder(itemView);
         itemView.setTag(holder);
         //设置Item点击事件
-        holder.setOnItemClickListener((view1, position) -> {
-            if (mOnItemClickListener != null) {
-                if (position >= getDataList().size()) {
-                    mOnItemClickListener.onItemClick(view1, viewType, null, position);
-                } else {
-                    mOnItemClickListener.onItemClick(view1, viewType, mDataList.get(position), position);
+        holder.setOnItemClickListener(new BaseRecycleViewHolder.OnViewClickListener() {
+            @Override
+            public void onViewClick(View view1, int position) {
+                if (mOnItemClickListener != null) {
+                    if (position >= getDataList().size()) {
+                        mOnItemClickListener.onItemClick(view1, viewType, null, position);
+                    } else {
+                        mOnItemClickListener.onItemClick(view1, viewType, mDataList.get(position), position);
+                    }
                 }
             }
         });

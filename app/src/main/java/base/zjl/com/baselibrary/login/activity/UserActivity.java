@@ -1,23 +1,26 @@
 package base.zjl.com.baselibrary.login.activity;
 
-import android.annotation.SuppressLint;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.lifecycle.Observer;
+
+import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProvider;
+
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
+
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.List;
 
-import base.zjl.com.baselibrary.R;
+import base.zjl.com.baselibrary.databinding.LayoutUseractivityBinding;
+import base.zjl.com.baselibrary.login.bean.MessageEvent;
 import base.zjl.com.baselibrary.login.bean.StudentEntry;
 import base.zjl.com.baselibrary.login.mvvm.BaseActivity;
-import base.zjl.com.baselibrary.login.mvvm.Person;
-import base.zjl.com.baselibrary.login.mvvm.User;
-import base.zjl.com.baselibrary.login.mvvm.UserViewModel;
-import butterknife.BindView;
+import base.zjl.com.baselibrary.login.login.Person;
+import base.zjl.com.baselibrary.login.login.User;
+import base.zjl.com.baselibrary.login.login.UserViewModel;
 
 /**
  * @author: zjl on 2018-7-30.
@@ -25,33 +28,43 @@ import butterknife.BindView;
  */
 public class UserActivity extends BaseActivity {
 
-    @BindView(R.id.tv_add)
-    TextView mTvAdd;
     private UserViewModel mUserViewModel;
-    public final int code = 1;
+    private LayoutUseractivityBinding binding;
 
-    @SuppressLint("CheckResult")
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mUserViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
-        mUserViewModel.init();
+    public void handBusMessage(MessageEvent event) {
+
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    public void initEvent() {
+
+    }
+
+    @Override
+    public void layoutViewBinding() {
+        binding = LayoutUseractivityBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+    }
+
+    @Override
+    public void initView() {
+        binding.customToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        mUserViewModel = new ViewModelProvider(this).get(UserViewModel.class);
         mUserViewModel.getUsers().observe(this, new Observer<List<User>>() {
             @Override
             public void onChanged(@Nullable List<User> users) {
                 int size = users.size();
-            }
-        });
-        mUserViewModel.getPsersons().observe(this, new Observer<List<Person>>() {
-            @Override
-            public void onChanged(@Nullable List<Person> people) {
-                int size = people.size();
-            }
-        });
-        mUserViewModel.getMpsersonLive().observe(this, new Observer<Person>() {
-            @Override
-            public void onChanged(@Nullable Person person) {
-                Log.e("tag", person.toString());
             }
         });
         mUserViewModel.getStudentData().observe(this, new Observer<List<StudentEntry>>() {
@@ -60,7 +73,7 @@ public class UserActivity extends BaseActivity {
                 Log.e("tag", "studentEntries" + studentEntries);
             }
         });
-        mTvAdd.setOnClickListener(new View.OnClickListener() {
+        binding.tvAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -68,32 +81,6 @@ public class UserActivity extends BaseActivity {
                 mUserViewModel.addStudent();
             }
         });
-
-
-    }
-
-    @Override
-    protected void initDate() {
-
-    }
-
-    @Override
-    protected void initEvent() {
-
-    }
-
-    @Override
-    public boolean useToolBar() {
-        return false;
-    }
-
-    @Override
-    public int initLoadResId() {
-        return R.layout.layout_useractivity;
-    }
-
-    @Override
-    protected void initView() {
 
     }
 
@@ -109,7 +96,12 @@ public class UserActivity extends BaseActivity {
     }
 
     @Override
-    public void onClick(View view) {
+    public void viewOnClick(View view) {
+
+    }
+
+    @Override
+    public void handleMsg(Message msg) {
 
     }
 }

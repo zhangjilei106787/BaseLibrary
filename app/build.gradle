@@ -1,16 +1,12 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'com.jakewharton.butterknife'
 android {
-    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
-    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    compileSdkVersion 30
+    buildToolsVersion '29.0.2'
     defaultConfig {
-        minSdkVersion rootProject.ext.android["minSdkVersion"]
-        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
-        versionCode rootProject.ext.android["versionCode"]
-        versionName rootProject.ext.android["versionName"]
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        minSdkVersion 23
+        multiDexEnabled true
+        versionCode 1
+        versionName '1.0'
     }
     signingConfigs {
         debug {
@@ -35,11 +31,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.debug
-//            manifestPlaceholders = [
-//                    UMENG_CHANNEL: "DEVELOP",
-//                    UMENG_APPKEY : "5b3c62e8b27b0a2422000126"
-//            ]
-
         }
         release {
             // 1 : 开发环境  2：正式环境
@@ -49,57 +40,35 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
-//            manifestPlaceholders = [
-//                    UMENG_CHANNEL: "DEVELOP",
-//                    UMENG_APPKEY : "5b3c62e8b27b0a2422000126"
-//            ]
         }
     }
-    buildscript {
-        repositories {
-            jcenter()
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
         }
     }
+
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    flavorDimensions "default"
-    productFlavors {
-        official {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "official"]
-        }
+    buildFeatures {
+        viewBinding = true
     }
-    android.applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            variant.productFlavors.each { flavor ->
-                def project = "demo"
-                def separator = "_"
-                def buildType = variant.variantData.variantConfiguration.buildType.name
-                def versionName = variant.versionName
-                def versionCode = variant.versionCode
-                def date = new Date()
-                def formattedDate = date.format('yyyyMMdd')
-
-                def apkName = project + separator + "v" + versionName + separator + versionCode + separator + buildType + separator + flavor.name + ".apk"
-                if (buildType == "release") {
-                    apkName = project + separator + "v" + versionName + separator + versionCode + separator + buildType + separator + flavor.name + separator + formattedDate + ".apk"
-                }
-
-                output.outputFileName = apkName
-            }
-        }
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: "org.jetbrains", module: "annotations"
     }
-
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':baselibrary')
-    // android 架构组件
-    def lifecycle_version = "1.1.1"
-    annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
-    annotationProcessor "android.arch.persistence.room:compiler:$lifecycle_version"
-    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    // 导入官方room   必须和 dao 放到一个moulde   不知道是不是bug
+    api 'androidx.room:room-runtime:2.3.0'
+    annotationProcessor 'androidx.room:room-compiler:2.3.0'
+
 }

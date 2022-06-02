@@ -1,18 +1,16 @@
 package base.zjl.com.baselibrary.login.mvvm;
 
 import android.app.Activity;
-import android.arch.lifecycle.DefaultLifecycleObserver;
-import android.arch.lifecycle.Lifecycle;
-import android.arch.lifecycle.LifecycleOwner;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.view.View;
+import androidx.lifecycle.DefaultLifecycleObserver;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import org.simple.eventbus.EventBus;
+
+import org.greenrobot.eventbus.EventBus;
 
 import base.zjl.com.baselibrary.login.sentor.MyOrientationListener;
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 /**
  * @author: zjl on 2018-8-6.

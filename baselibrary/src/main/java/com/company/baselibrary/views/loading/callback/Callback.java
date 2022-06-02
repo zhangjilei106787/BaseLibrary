@@ -48,12 +48,15 @@ public abstract class Callback implements Serializable {
         if (rootView == null) {
             rootView = View.inflate(context, onCreateView(), null);
         }
-        rootView.setOnClickListener(v -> {
-            if (onReloadEvent(context, rootView)) {
-                return;
-            }
-            if (onReloadListener != null) {
-                onReloadListener.onReload(v);
+        rootView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onReloadEvent(context, rootView)) {
+                    return;
+                }
+                if (onReloadListener != null) {
+                    onReloadListener.onReload(v);
+                }
             }
         });
         onViewCreate(context, rootView);

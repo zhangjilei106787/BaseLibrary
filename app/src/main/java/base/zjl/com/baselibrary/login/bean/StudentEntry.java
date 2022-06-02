@@ -1,22 +1,20 @@
 package base.zjl.com.baselibrary.login.bean;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Ignore;
-import android.arch.persistence.room.PrimaryKey;
+
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
 
 /**
  * @author: zjl on 2018-8-4.
  * Class:
  */
-//indices = {@Index(value = "sex",unique = true)},
-//        foreignKeys = {@ForeignKey(entity=ClassEntity.class,parentColumns = "id",childColumns ="class_id")}
-@Entity(tableName = "StudentEntry"
-        )
+@Entity(tableName = "StudentEntry")
 //索引根据需求添加
 public class StudentEntry {
 
-    @PrimaryKey //定义主键
+    @PrimaryKey(autoGenerate = true)
     private long id;
     @ColumnInfo(name = "name")//定义数据表中的字段名   默认不加  是字段名
     private String name;
@@ -27,9 +25,6 @@ public class StudentEntry {
     @ColumnInfo(name = "class_id")
     private String class_id;
 
-    //@Embedded 嵌入其他对象
-    //@Embedded ()如果一个实体具有相同类型的多个内嵌字段
-//@Embedded(prefix = "one")
     public long getId() {
         return id;
     }

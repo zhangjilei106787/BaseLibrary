@@ -2,7 +2,7 @@ package com.company.baselibrary.views.toolbar;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,7 +18,7 @@ import com.company.baselibrary.R;
  * @Description:
  */
 
-public class CustomToolbar extends android.support.v7.widget.Toolbar {
+public class CustomToolbar extends androidx.appcompat.widget.Toolbar {
     private TextView mTxtLeftTitle;
     private TextView mTxtMiddleTitle;
     private TextView mTxtRightTitle;

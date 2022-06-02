@@ -3,23 +3,17 @@ package base.zjl.com.baselibrary.login.mvvm;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.trello.rxlifecycle2.components.support.RxFragment;
-
-import org.simple.eventbus.EventBus;
-
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
+import com.trello.rxlifecycle4.components.support.RxFragment;
 
 
 public abstract class BaseFragment extends RxFragment {
     public Activity activity;
-    private Unbinder unbinder;
     private ProgressDialog mProgressDialog;
 
     @Override
@@ -32,7 +26,6 @@ public abstract class BaseFragment extends RxFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = initView(inflater, container);
-        unbinder = ButterKnife.bind(this, view);
         getLifecycle().addObserver(new FragmentconfigurationObserver(getActivity(),this));
         return view;
     }
@@ -56,7 +49,6 @@ public abstract class BaseFragment extends RxFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        unbinder.unbind();
     }
     public void showLoadingDialog() {
         showLoadingDialog("",false);
