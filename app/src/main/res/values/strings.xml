@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BaseLibrary</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">地图</string>
+    <string name="title_notifications">待办</string>
+    <string name="title_me">我的</string>
 </resources>

@@ -11,6 +11,11 @@ import android.view.ViewGroup;
 
 import com.trello.rxlifecycle4.components.support.RxFragment;
 
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import base.zjl.com.baselibrary.login.bean.MessageEvent;
+
 
 public abstract class BaseFragment extends RxFragment {
     public Activity activity;
@@ -25,26 +30,28 @@ public abstract class BaseFragment extends RxFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = initView(inflater, container);
+        View view = bingView(inflater, container);
         getLifecycle().addObserver(new FragmentconfigurationObserver(getActivity(),this));
         return view;
     }
 
-    public abstract View initView(LayoutInflater inflater, ViewGroup container);
+    public abstract View bingView(LayoutInflater inflater, ViewGroup container);
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         initData();
-        initView();
-        prepareData();
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void EventbusMessage(MessageEvent event) {
+        handBusMessage(event);
     }
 
-    public void initView() { }
+
+    public abstract void handBusMessage(MessageEvent event);
 
     public void initData() { }
 
-    protected void prepareData() { }
 
     @Override
     public void onDestroyView() {

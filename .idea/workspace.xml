@@ -32,97 +32,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a89e0739-b65c-4e32-b1aa-89d139368295" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/bean/MessageEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/observer/ActivityConfigurationObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/observer/ApplicationLifecycleObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/scan/CameraOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/scan/CaptureCodeActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/scan/CommonHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/scan/Contants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/scan/ScanResultView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/cb_flash_selecter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/cloors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_common.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/flash_off.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/flash_on.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/activity/LoginActivity.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_2_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_2_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_2_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_2_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/fragment/HomeFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/fragment/MapFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/fragment/MeFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/fragment/WaitFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/util/CustomDialogUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/view/CustomDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bottom_navigation_item_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/select_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/select_map.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/select_me.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/select_waitdone.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_dialog_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_me.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notify.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/load_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon_home_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon_home_unselect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon_map_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon_map_unselect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon_me_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon_me_unselect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon_waitdone_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon_waitdone_unselect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_contrarywind_Android_PickerView_4_1_9_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_contrarywind_Android_PickerView_4_1_9_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_darsh_multipleimageselect_multipleimageselect_1_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_darsh_multipleimageselect_multipleimageselect_1_0_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_davemorrissey_labs_subsampling_scale_image_view_3_10_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_davemorrissey_labs_subsampling_scale_image_view_3_10_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_SherlockGougou_BigImageViewPager_v4_6_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_SherlockGougou_BigImageViewPager_v4_6_1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_9_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_9_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_okhttp3_integration_4_9_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_okhttp3_integration_4_9_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_gyf_immersionbar_immersionbar_3_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_gyf_immersionbar_immersionbar_3_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_gyf_immersionbar_immersionbar_components_3_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_gyf_immersionbar_immersionbar_components_3_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_huawei_android_hms_security_ssl_1_1_5_301_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_huawei_android_hms_security_ssl_1_1_5_301_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jph_takephoto_takephoto_library_4_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jph_takephoto_takephoto_library_4_0_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_scwang_smartrefresh_SmartRefreshHeader_1_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_scwang_smartrefresh_SmartRefreshHeader_1_0_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_scwang_smartrefresh_SmartRefreshLayout_1_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_scwang_smartrefresh_SmartRefreshLayout_1_0_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_soundcloud_android_crop_lib_crop_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_soundcloud_android_crop_lib_crop_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_youth_banner_banner_1_4_9_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_youth_banner_banner_1_4_9_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yuyh_easyadapter_library_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yuyh_easyadapter_library_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yuyh_imgsel_library_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yuyh_imgsel_library_2_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_shaohui_advancedluban_library_1_3_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_shaohui_advancedluban_library_1_3_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/BaseLibrary.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/BaseLibrary.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/baselibrary/BaseLibrary.baselibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/baselibrary/BaseLibrary.baselibrary.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/activity/UserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/activity/UserActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/bean/ClassEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/bean/ClassEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/bean/StudentEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/bean/StudentEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/dao/AppRoomDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/dao/AppRoomDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/login/IloginListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/login/LoginContract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/login/LoginModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/login/LoginPresenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/ActivityconfigurationObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/BaseActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/BaseFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/FragmentconfigurationObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/FragmentconfigurationObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/login/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/login/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/login/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/mvvm/UserViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/login/UserViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/net/callback/GsonWrapperCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/net/callback/GsonWrapperCallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/net/callback/IGsonRequestCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/net/callback/IGsonRequestCallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/net/retrofit/RetrofitUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/net/retrofit/RetrofitUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_useractivity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_useractivity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/base/zjl/com/baselibrary/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baselibrary/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/BaseRecycleViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/BaseRecycleViewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/BaseRecycleViewHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/BaseRecycleViewHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/mvp/BaseActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/mvp/BaseFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/mvp/IBaseModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/mvp/IBaseView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/base/mvp/IBasepresenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/observer/ActivityObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/base/zjl/com/baselibrary/login/observer/ActivityObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/common/ScreenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/common/ScreenUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/common/SizeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/common/SizeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/common/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/common/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/crash/PermissionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/crash/PermissionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/metrics/MetricsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/metrics/MetricsUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/navigation/BottomNavigationViewHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/navigation/BottomNavigationViewHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/utils/util/CommonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/loading/LoadSir.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/loading/LoadSir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/loading/callback/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/loading/callback/Callback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/loading/core/LoadLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/loading/core/LoadLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/toolbar/CustomToolbar.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/toolbar/CustomToolbar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/WrapAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/WrapAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/XRecyclerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/XRecyclerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/CaptureActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/camera/AutoFocusManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/camera/CameraConfigurationManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/camera/CameraManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/camera/PreviewCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/camera/open/OpenCameraInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/decode/DecodeFormatManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/decode/DecodeHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/decode/DecodeThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/encoding/ZXingUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/tool/BeepManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/tool/CaptureActivityHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/zxing/tool/InactivityTimer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselibrary/src/test/java/com/company/baselibrary/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/toast/CustomToastUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/BaseRefreshHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/LoadingFooter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/RefreshHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/WrapAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/XRecyclerView.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@FMLDU19C27002766]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[FMLDU19C27002766]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -160,29 +167,44 @@
     <property name="DEBUGGABLE_PROCESS" value="base.zjl.com.baselibrary" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android-custom-viewC:/Users/Administrator/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.1.0/9865019bbd2d95e41dede3d8ebf964aa93f97766/appcompat-1.1.0-sources.jar!/androidx/appcompat/widget/Toolbar.java_SELECTED" value="Toolbar" />
     <property name="android-custom-viewE:/data/BaseLibrary/app/src/main/java/base/zjl/com/baselibrary/login/scan/ScanResultView.java_SELECTED" value="ScanResultView" />
+    <property name="android-custom-viewE:/data/BaseLibrary/app/src/main/java/base/zjl/com/baselibrary/login/view/WaterWaveView.java_SELECTED" value="WaterWaveView" />
     <property name="android-custom-viewE:/data/BaseLibrary/app/src/main/java/base/zjl/com/baselibrary/login/view/WaveProgressView.java_SELECTED" value="WaveProgressView" />
     <property name="android-custom-viewE:/data/BaseLibrary/baselibrary/src/main/java/com/company/baselibrary/views/toolbar/CustomToolbar.java_SELECTED" value="CustomToolbar" />
+    <property name="android-custom-viewE:/data/BaseLibrary/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/LoadingFooter.java_SELECTED" value="LoadingFooter" />
     <property name="android.sdk.path" value="F:/sdk/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="multi-representation-previewE:/data/BaseLibrary/app/src/main/java/base/zjl/com/baselibrary/login/view/WaterWaveView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewE:/data/BaseLibrary/app/src/main/java/base/zjl/com/baselibrary/login/view/WaveProgressView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewE:/data/BaseLibrary/baselibrary/src/main/java/com/company/baselibrary/views/toolbar/CustomToolbar.java_selected" value="Custom views" />
+    <property name="multi-representation-previewE:/data/BaseLibrary/baselibrary/src/main/java/com/company/baselibrary/views/xrecyclerview/LoadingFooter.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\data\BaseLibrary\app\src\main\res" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.company.baselibrary.observer" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="base.zjl.com.baselibrary.login.view" />
+      <recent name="base.zjl.com.baselibrary.login.fragment" />
       <recent name="base.zjl.com.baselibrary.login.scan" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\data\BaseLibrary\app\src\main\res\mipmap-xxhdpi" />
       <recent name="E:\data\BaseLibrary\app\src\main\res\drawable" />
       <recent name="E:\data\BaseLibrary\app\src\main\res\layout" />
-      <recent name="E:\data\BaseLibrary\app\src\main\java\base\zjl\com\baselibrary\login\scan" />
+      <recent name="E:\data\BaseLibrary\baselibrary\src\main\res" />
+      <recent name="E:\data\BaseLibrary\app\src\main\res\mipmap-xxhdpi" />
+      <recent name="E:\data\BaseLibrary\app\src\main\res" />
     </key>
   </component>
   <component name="RunManager">
@@ -201,7 +223,6 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
-      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -251,13 +272,11 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a89e0739-b65c-4e32-b1aa-89d139368295" name="Default Changelist" comment="" />
@@ -281,90 +300,54 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="704" y="322" key="#Gradle" timestamp="1653038396137">
+    <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1680838068204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="704" y="322" key="#Gradle/0.0.1920.1040@0.0.1920.1040" timestamp="1653038396137" />
-    <state x="477" y="266" key="#PSD" timestamp="1654139706756">
+    <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1680838068204" />
+    <state x="543" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1680837633703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="477" y="266" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1654139706756" />
-    <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1654150947146">
+    <state x="543" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1680837633703" />
+    <state x="720" y="267" key="AndroidProcessChooserDialog" timestamp="1680834488633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1654150947146" />
-    <state x="526" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654150196676">
+    <state x="720" y="267" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1680834488633" />
+    <state width="1879" height="306" key="GridCell.Tab.0.bottom" timestamp="1680838102228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="526" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1654150196676" />
-    <state x="669" y="391" width="582" height="264" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1654149963688">
+    <state width="1879" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1680838102228" />
+    <state width="1879" height="306" key="GridCell.Tab.0.center" timestamp="1680838102228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="669" y="391" width="582" height="264" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1654149963688" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1654149661337">
+    <state width="1879" height="306" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1680838102228" />
+    <state width="1879" height="306" key="GridCell.Tab.0.left" timestamp="1680838102228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1654149661337" />
-    <state x="286" y="239" width="490" height="569" key="#xdebugger.evaluate" timestamp="1654156323033">
+    <state width="1879" height="306" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1680838102228" />
+    <state width="1879" height="306" key="GridCell.Tab.0.right" timestamp="1680838102228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="286" y="239" width="490" height="569" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1654156323033" />
-    <state x="714" y="267" key="AndroidProcessChooserDialog" timestamp="1654160969662">
+    <state width="1879" height="306" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1680838102228" />
+    <state width="1879" height="274" key="GridCell.Tab.1.bottom" timestamp="1680837672087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="267" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1654160969662" />
-    <state width="491" height="466" key="DebuggerActiveHint" timestamp="1654160990685">
+    <state width="1879" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1680837672087" />
+    <state width="1879" height="274" key="GridCell.Tab.1.center" timestamp="1680837672086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="491" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1654160990685" />
-    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1653533972587">
+    <state width="1879" height="274" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1680837672086" />
+    <state width="1879" height="274" key="GridCell.Tab.1.left" timestamp="1680837672086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1653533972587" />
-    <state width="1879" height="324" key="GridCell.Tab.0.bottom" timestamp="1654161277512">
+    <state width="1879" height="274" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1680837672086" />
+    <state width="1879" height="274" key="GridCell.Tab.1.right" timestamp="1680837672086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1654161277512" />
-    <state width="1879" height="324" key="GridCell.Tab.0.center" timestamp="1654161277512">
+    <state width="1879" height="274" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1680837672086" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1677577834146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="324" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1654161277512" />
-    <state width="1879" height="324" key="GridCell.Tab.0.left" timestamp="1654161277512">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1879" height="324" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1654161277512" />
-    <state width="1879" height="324" key="GridCell.Tab.0.right" timestamp="1654161277512">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1879" height="324" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1654161277512" />
-    <state width="1879" height="113" key="GridCell.Tab.1.bottom" timestamp="1654161262877">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1879" height="113" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1654161262877" />
-    <state width="1879" height="113" key="GridCell.Tab.1.center" timestamp="1654161262877">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1879" height="113" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1654161262877" />
-    <state width="1879" height="113" key="GridCell.Tab.1.left" timestamp="1654161262877">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1879" height="113" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1654161262877" />
-    <state width="1879" height="113" key="GridCell.Tab.1.right" timestamp="1654161262877">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1879" height="113" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1654161262877" />
-    <state x="540" y="264" key="IDE.errors.dialog" timestamp="1653039811023">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="540" y="264" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653039811023" />
-    <state x="690" y="296" key="extract.method.dialog" timestamp="1654153370194">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="296" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1654153370194" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1654158353454">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1654158353454" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1677577834146" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

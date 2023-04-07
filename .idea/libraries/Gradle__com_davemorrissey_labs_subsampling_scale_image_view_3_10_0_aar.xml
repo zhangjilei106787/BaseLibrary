@@ -2,11 +2,23 @@
   <library name="Gradle: com.davemorrissey.labs:subsampling-scale-image-view:3.10.0@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/35c40398da0604c92324efd907ae861c/jetified-subsampling-scale-image-view-3.10.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40bc94f8906ad20359fb9d0107735a39/jetified-subsampling-scale-image-view-3.10.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6971ba98fe8b80e2d8da5977377ba86/jetified-subsampling-scale-image-view-3.10.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4381af6e41bcd8e83c5310b96b9ea3d2/jetified-subsampling-scale-image-view-3.10.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/35c40398da0604c92324efd907ae861c/jetified-subsampling-scale-image-view-3.10.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/35c40398da0604c92324efd907ae861c/jetified-subsampling-scale-image-view-3.10.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/35c40398da0604c92324efd907ae861c/jetified-subsampling-scale-image-view-3.10.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40bc94f8906ad20359fb9d0107735a39/jetified-subsampling-scale-image-view-3.10.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40bc94f8906ad20359fb9d0107735a39/jetified-subsampling-scale-image-view-3.10.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40bc94f8906ad20359fb9d0107735a39/jetified-subsampling-scale-image-view-3.10.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6971ba98fe8b80e2d8da5977377ba86/jetified-subsampling-scale-image-view-3.10.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6971ba98fe8b80e2d8da5977377ba86/jetified-subsampling-scale-image-view-3.10.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6971ba98fe8b80e2d8da5977377ba86/jetified-subsampling-scale-image-view-3.10.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4381af6e41bcd8e83c5310b96b9ea3d2/jetified-subsampling-scale-image-view-3.10.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4381af6e41bcd8e83c5310b96b9ea3d2/jetified-subsampling-scale-image-view-3.10.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4381af6e41bcd8e83c5310b96b9ea3d2/jetified-subsampling-scale-image-view-3.10.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.davemorrissey.labs/subsampling-scale-image-view/3.10.0/8375dcbd6f4743df5a52b0558454891f00790c6a/subsampling-scale-image-view-3.10.0-javadoc.jar!/" />

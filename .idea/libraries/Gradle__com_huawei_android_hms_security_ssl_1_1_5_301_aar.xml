@@ -5,6 +5,15 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/99759a5334a94717850f9735d96650c2/transformed/jetified-security-ssl-1.1.5.301/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb1f3b8bf4c5f8e03292174da4ebd070/jetified-security-ssl-1.1.5.301/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb1f3b8bf4c5f8e03292174da4ebd070/jetified-security-ssl-1.1.5.301/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1df4022ac155d8128e911a583fffd7a8/jetified-security-ssl-1.1.5.301/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1df4022ac155d8128e911a583fffd7a8/jetified-security-ssl-1.1.5.301/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1df4022ac155d8128e911a583fffd7a8/jetified-security-ssl-1.1.5.301/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0815ba600a749f56153deabe7bf67dda/jetified-security-ssl-1.1.5.301/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0815ba600a749f56153deabe7bf67dda/jetified-security-ssl-1.1.5.301/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0815ba600a749f56153deabe7bf67dda/jetified-security-ssl-1.1.5.301/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4955f8d9dc803ff9a8c8e30e5ee7827/jetified-security-ssl-1.1.5.301/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4955f8d9dc803ff9a8c8e30e5ee7827/jetified-security-ssl-1.1.5.301/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4955f8d9dc803ff9a8c8e30e5ee7827/jetified-security-ssl-1.1.5.301/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huawei.android.hms/security-ssl/1.1.5.301/da39a3ee5e6b4b0d3255bfef95601890afd80709/security-ssl-1.1.5.301-javadoc.jar!/" />

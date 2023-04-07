@@ -7,11 +7,18 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.tbruyelle.rxpermissions3.Permission;
 import com.tbruyelle.rxpermissions3.RxPermissions;
 
 import java.util.List;
 
+import base.zjl.com.baselibrary.R;
 import base.zjl.com.baselibrary.databinding.ActivityMainBinding;
 import base.zjl.com.baselibrary.login.bean.MessageEvent;
 import base.zjl.com.baselibrary.login.bean.UserCateBean;
@@ -29,25 +36,16 @@ public class MainActivity extends BaseActivity {
     @Override
     public void initData() {
 
-        HttpUtil.getInstance().getUserType2(new IGsonRequestCallBack<List<UserCateBean>>() {
-            @Override
-            public void onBeforeRequest() {
 
-            }
-
-            @Override
-            public void onSuccess(List<UserCateBean> result) {
-                if (result != null && !result.isEmpty()) {
-                    //   Log.e("tag==",result.toString());
-                }
-            }
-
-            @Override
-            public void onError(String error) {
-
-            }
-        });
-
+        BottomNavigationView navView = findViewById(R.id.nav_view);
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_home, R.id.navigation_map, R.id.navigation_notifications,R.id.navigation_me)
+                .build();
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        NavigationUI.setupWithNavController(navView, navController);
     }
 
     @Override
@@ -98,10 +96,10 @@ public class MainActivity extends BaseActivity {
         permissions.request(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA).subscribe(new Consumer<Boolean>() {
             @Override
             public void accept(Boolean aBoolean) throws Throwable {
-                if (aBoolean) {
-                    Intent intent = new Intent(MainActivity.this, UserActivity.class);
-                    startActivity(intent);
-                }
+//                if (aBoolean) {
+//                    Intent intent = new Intent(MainActivity.this, UserActivity.class);
+//                    startActivity(intent);
+//                }
             }
         });
     }

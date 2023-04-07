@@ -25,8 +25,8 @@ public class RetrofitUtil {
                 .addInterceptor(new CommonInterceptor())
                 .addInterceptor(new HeaderInterceptor())
                 .addInterceptor(new LogInterceptor())
-                .connectTimeout(5, TimeUnit.SECONDS)
-                .readTimeout(10, TimeUnit.SECONDS)
+                .connectTimeout(30, TimeUnit.SECONDS)
+                .readTimeout(30, TimeUnit.SECONDS)
                 .proxy(Proxy.NO_PROXY)
                 .build();
 
